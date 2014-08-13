@@ -1,0 +1,158 @@
+/* 
+Faculty of Applied Science and Engineering
+University of Toronto
+Designer/Author: Mark Balson
+ 
+The general layout for this site consists of main section 
+containers that span the width of the screen. Within this each 
+has a inner container to properly center it's contents, apply 
+a float, and a fixed width.
+--------------------------------------------------------*/
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px; /* Base paragraph size */
+	line-height: 1.2857142857142858em; /* Creates 18px baseline from paragraph text size of 14px */
+	/*color: #222222;*/
+	color: #151515;
+	/*background: #f1f1f1;*/
+	background: #f4f4f4;
+	}
+
+#homeContentColumn {
+width: 676px;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+float: left;
+}
+	
+/*#scrollableContainer{position:absolute;}*/
+
+#homeFeature {
+	width: 676px;/*945*/
+	height: 422px;/*243*/
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	background: #1414cb url(../Scrollable/scroller_bg.gif) repeat-x 0 0;
+	}	
+
+#homeFeature img {
+	width: 676px;/*705*/
+	height:350px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 15px 0px 0px;
+	border-bottom:solid 1px grey;
+	float: left;
+	}
+	
+#homeFeatureText {
+	width: 676px;
+	height:72px;
+	padding: 0px 0px 0px 0px;
+	margin: 5px 5px 5px 5px;
+	}
+	
+#homeFeatureText p {
+	color: #ffffff;
+	font-size: 0.857142857142857em; /* 12px Text */
+	}
+
+#homeFeatureText h2 {
+	margin: 0px 0px 5px 0px;
+}
+	
+#homeFeatureText a, 
+#homeFeatureText a:link, 
+#homeFeatureText a:active,
+#homeFeatureText a:visited {
+	text-decoration: underline;
+	color: #ffffff;
+	}
+
+#homeFeatureText a:hover {
+	color: #00aeef;
+	text-decoration: underline;
+	}
+	
+#homeContentColumn #homeFeatureText h2 a, 
+#homeContentColumn #homeFeatureText h2 a:link, 
+#homeContentColumn #homeFeatureText h2 a:active,
+#homeContentColumn #homeFeatureText h2 a:visited {
+	text-decoration: none;
+	color: #ffffff;
+	}
+
+#homeContentColumn #homeFeatureText h2 a:hover {
+	color: #00aeef;
+	text-decoration: none;
+	}	
+	
+
+#homeContentColumn h2 a, 
+#homeContentColumn h2 a:link, 
+#homeContentColumn h2 a:active {
+	text-decoration: none;
+	color: #00204e;
+	}
+
+#homeContentColumn h2 a:hover {
+	color: #00aeef;
+	text-decoration: none;
+	}
+	
+#homeContentColumn h4 a, 
+#homeContentColumn h4 a:link, 
+#homeContentColumn h4 a:active {
+	text-decoration: none;
+	color: #00204e;
+	}
+
+#homeContentColumn h4 a:hover {
+	color: #00aeef;
+	text-decoration: underline;
+	}
+
+#homeContentColumn ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	}
+
+#homeContentColumn .ipf_ql_title {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.857142857142857em; /* 12px Text */
+	line-height: 1.5em; /* 18px Base */
+	color: #222222;
+	font-weight: bold;
+	display: block;
+	}
+
+#homeContentColumn .ipf_ql_summary {
+	margin: 0px 0px 18px 0px;
+	padding: 0px 0px 0px 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.857142857142857em; /* 12px Text */
+	line-height: 1.5em; /* 18px Base */
+	color: #222222;
+	display: block;
+	}	
+
+#contentContainer {
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	}
+
+#contentInner {
+	width: 975px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px auto 0px auto;
+	}
+	
+	
+	

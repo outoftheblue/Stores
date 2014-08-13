@@ -1,0 +1,19 @@
+p,h1{font-family:Verdana;}
+#header p{color:black;}
+table,tr,th,td,thead,tfoot{border:1px solid black;}
+#page p{color:black;}
+#page{position:relative;width:1000px;min-height:268px;overflow:hidden;}
+/*#page:after{width:1000px;min-height:1716px;
+  background: url('/images/EngStoresLogo.jpg');
+  background-size:1000px 268px;
+  background-repeat:repeat-y;
+  background-color:#101010;
+  width:1000px;height:268px;
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";}*/

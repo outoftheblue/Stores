@@ -1,0 +1,66 @@
+/* prev, next, prevPage and nextPage buttons */
+a.prev, a.next, a.prevPage, a.nextPage {
+	display:block;
+	width:18px;
+	height:18px;
+	background:url(http://www.engineering.utoronto.ca/Sites/3/templates/Scrollable/arrow/left.png) no-repeat;
+	float:left;
+	margin:43px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position:0px -18px;		
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+
+/* next button uses another background image */
+a.next, a.nextPage {
+	background-image:url(http://www.engineering.utoronto.ca/Sites/3/templates/Scrollable/arrow/right.png);
+	clear:right;	
+}
+
+
+
+/*********** navigator ***********/
+
+
+/* position and dimensions of the navigator */
+div.navi {
+	padding: 0px 0px 0px 0px;
+	/*margin: 214px 0px 0px 732px;*/
+	position: relative;
+	float: left;
+	z-index: 1;
+	top: -20px;
+	left: 606px;/*733*/
+}
+
+
+/* items inside navigator */
+div.navi a {
+	width:8px;
+	height:8px;
+	float:left;
+	margin:4px;
+	background:url(http://www.engineering.utoronto.ca/Sites/3/templates/Scrollable/arrow/navigator.png) 0 0 no-repeat;
+	display:block;
+	font-size:1px;
+}
+
+/* mouseover state */
+div.navi a:hover {
+	background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+div.navi a.active {
+	background-position:0 -16px;     
+} 	
+
