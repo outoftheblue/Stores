@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="sliderstyle.css" rel="stylesheet" type="text/css" />
+	<link href="scrollable-minimal.css" rel="stylesheet" type="text/css" />
+	<link href="scrollable-navig.css" rel="stylesheet" type="text/css" />
+	<script src="jquery.tools.min.js" type="text/javascript"></script>
+</head>
+<body id="thebody">
+	<!-- Content Area -->
+	<div id="contentContainer">
+		<div id="contentInner">
+		<div id="homeContentColumn">
+		<div id="scrollableContainer">
+		    <div class="scrollable">
+				<!-- root element for the items -->
+				<div class="items">
+					<div> 
+						<div id="homeFeature"> 
+							<a href="#nogo">
+							<img src="http://www.challengebatemansbay.com.au/images/bbay-run-675x350.png" alt="occam lab" /></a>
+							<div id="homeFeatureText">  
+								<h6><a href="#nogo">Heading</a> </h6> 
+								<p>Sentence v Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence.</p> 
+							</div>
+						</div>
+					</div>
+					<div>
+						<div id="homeFeature"> 
+							<a href="#nogo">
+							<img src="http://us-p.vclart.net/vcl/Artists/J-C/Commissions/likeshineavatar.jpg" alt="Centre for Engineering Innovation &amp; Entrepreneurship" /></a>  
+							<div id="homeFeatureText">  
+							<h6><a href="#nogo">Heading</a> </h6> 
+								<p>Sentence v Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence.</p> 
+							</div>
+						</div>
+					</div>                                                                                             
+					<div> 
+						<div id="homeFeature"> 
+							<a href="#nogo">
+							<img src="http://us-p.vclart.net/vcl/Artists/J-C/Commissions/blackteaganavatar.jpg" alt="nanoleaf banner" /></a>  
+							<div id="homeFeatureText">  
+								<h6> <a href="#nogo">Heading Heading Heading Heading Heading Heading Heading</a></h6> 
+								<p>Sentence v Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence.</p> 
+							</div>
+						</div>
+					</div>                                                                                                       
+					<div> 
+						<div id="homeFeature"> 
+							<a href="#nogo">
+							<img src="http://us-p.vclart.net/vcl/Artists/J-C/Commissions/lacyavatar.jpg" alt="MEng banner" /></a> 
+							<div id="homeFeatureText">
+								<h6><a href="#nogo">Heading</a></h6> 
+								<p>Sentence v Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence.</p> 
+							</div>
+						</div>
+					</div>                       
+					<div> 
+						<div id="homeFeature"> 
+							<a href="#nogo"> 
+							<img alt="Boundless" src="http://bettyandkora.files.wordpress.com/2014/01/red-bull-sound-select-120-hours-in-austin-675-675x350.png" border="0" /> </a>  
+							<div id="homeFeatureText"> 
+								<h6> <a href="#nogo">Heading Heading Heading Heading</a> </h6>
+								<p>Sentence v Sentence Sentence Sentence Sentence Sentence Sentence Sentence Sentence.</p>
+							</div> 
+						</div> 
+					</div>                                         
+				</div>
+			</div>  
+			 <!-- navigator -->
+			<div class="navi"></div>      
+		</div>
+	<br clear="all" />
+	</div>
+	</div>   
+	</div>
+	<!-- Scroller call -->
+	<script>
+	$(document).ready(function() {
+		$(".scrollable").scrollable({circular: true, mousewheel: true}).navigator().autoscroll({
+			size: 1,
+			interval: 3000,
+			loop: true,
+			speed: 500,
+		});	
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1010">
+	<title>Stores Prototype - Content via Ajax - Abdul Ali</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="fancybox2/source/jquery.fancybox.css">
+	
+	<script src="/etabs/vendor/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="/etabs/vendor/jquery.hashchange.min.js" type="text/javascript"></script>
+	<script src="/etabs/lib/jquery.easytabs.js" type="text/javascript"></script>
+	<script src="js/shop.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="topbar">
+			<h1>Stores</h1>
+		</div> 
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="siteinfo.html">Site Info</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a id="current" href="shop2.html">Shop 2</a>
+				</li>
+				<li>
+					<a target="blank" href="Stores946853.pdf">Receipt</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div id="page">
+
+		<div id="ajax-tab-container" class='tab-container'>
+		 <ul class='tabs'>
+		   <li class='tab'><a href="/ajax/featured.html" data-target="#Featured">Featured</a></li>
+		   <li class='tab'><a href="/ajax/shirts.html" data-target="#Shirts">Shirts</a></li>
+		   <li class='tab'><a href="/ajax/patches.html" data-target="#Patches">Patches</a></li>
+		   <li class='tab'><a href="/ajax/books.html" data-target="#Books">Books</a></li>
+		   <li class='tab'><a href="/ajax/jackets.html" data-target="#Jackets">Jackets</a></li>
+		   <li class='tab'><a href="/ajax/stationary.html" data-target="#Stationary">Stationary</a></li>
+		   <li class='tab'><a href="/ajax/miscellaneous.html" data-target="#Miscellaneous">Misc.</a></li>
+		   <li class='tab' id="checkouttab"><a href="/ajax/checkout.php" data-target="#Checkout">Checkout</a></li>
+		   <li class='tab' id="searchtab"><a href="/ajax/search.html" data-target="#Search">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" class="style0"><style>.style0{width:35px;height:35px;margin:	6px;position:absolute;left:2px;fill:#ffffff;}</style><g><path d="M384 192C384 86 298 0 192 0S0 86 0 192s85.969 192 192 192S384 298 384 192z M192 336 c-79.406 0-144-64.594-144-144S112.594 48 192 48s144 64.6 144 144S271.406 336 192 336z"/><path d="M497.938 430.063L380.469 312.594c-17.5 27.219-40.656 50.375-67.875 67.875l117.469 117.5 c18.75 18.8 49.2 18.8 67.9 0C516.688 479.2 516.7 448.8 497.9 430.063z"/></g></svg>
+				<input placeholder="Search for an item..." id="searchfieldd" type="text"  maxlength="30" onkeyup="showHint(this.value)"/>
+				</a>
+			</li>
+		 </ul>
+		 <div class='panel-container'>
+		  <div id="Featured"></div>
+		  <div id="Shirts"></div>
+		  <div id="Patches"></div>
+		  <div id="Books"></div>
+		  <div id="Jackets"></div>
+		  <div id="Stationary"></div>
+		  <div id="Miscellaneous"></div>
+		  <div id="Checkout"></div>
+		  <div id="Search"></div>
+		 </div>
+		</div>
+
+		<footer onmouseover="" ontouchstart="">
+
+			<div id="prefooter">
+			<div id="prefooterouter">
+			<div id="footerslogan"><p>Run by the students, for the students.</p></div>
+			<div id="prefooterinner">
+				<div class="bar" ></div>
+				<div class="linkhouse" id="linkhouse-left">
+					<ul>
+						<li><p><a href="#nogo">Link</a></p></li>
+						<li><p><a href="#nogo">Link</a></p></li>
+						<li><p><a href="#nogo">Link</a></p></li>
+						<li><p><a href="#nogo">Link</a></p></li>
+						<li><p><a href="#nogo">Link</a></p></li>
+						<li><p><a href="#nogo">Policy</a></p></li>
+						<li><p><a href="#nogo">FAQ</a></p></li>
+					</ul>
+				</div>
+				<div class="bar"></div>
+				<div class="linkhouse" id="linkhouse-middle">
+					<ul>
+						<p style="text-align:center;">Hours</p>
+						<li><p><span class="leftjustify">Monday</span><span class="rightjustify">11am - 3pm</span></p></li>
+						<li><p><span class="leftjustify">Tuesday</span><span class="rightjustify">11am - 3pm</span></li>
+						<li><p><span class="leftjustify">Wednesday</span><span class="rightjustify">11am - 3pm</span></p></li>
+						<li><p><span class="leftjustify">Thursday</span><span class="rightjustify">11am - 3pm</span></p></li>
+						<li><p><span class="leftjustify">Friday</span><span class="rightjustify">11am - 3pm</span></p></li>
+						<p style="text-align:center;margin-top:15px;">B740 Sanford Fleming Building</p>
+					</ul>
+				</div> 
+				<div class="bar"></div>
+				<div class="linkhouse" id="linkhouse-right">
+					<ul>
+						<li><a href="#nogo"><p>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve" class="socialb" id="fb"><path d="M8 0C3.582 0 0 3.6 0 8s3.582 8 8 8s8-3.582 8-8C16 3.6 12.4 0 8 0z M10.068 7.999L8.757 8l-0.001 4.8H6.957V8h-1.2 V6.346l1.2-0.001L6.955 5.371c0-1.35 0.366-2.171 1.955-2.171h1.324v1.655H9.406c-0.619 0-0.649 0.231-0.649 0.662L8.755 6.3 h1.488L10.068 7.999z"/></svg>
+							Facebook</p></a>
+						</li>
+						<li><a href="#nogo"><p>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve" class="socialb" id="tw"><path d="M8 0C3.582 0 0 3.6 0 8s3.582 8 8 8s8-3.582 8-8C16 3.6 12.4 0 8 0z M11.98 6.204l0.006 0.3 c0 2.604-1.981 5.604-5.604 5.604c-1.112 0-2.147-0.326-3.019-0.885c0.154 0 0.3 0 0.5 0 c0.923 0 1.772-0.315 2.446-0.843c-0.862-0.016-1.589-0.586-1.84-1.368C4.56 9 4.7 9 4.8 9 c0.18 0 0.354-0.023 0.519-0.068c-0.901-0.182-1.58-0.977-1.58-1.931V7.005c0.266 0.1 0.6 0.2 0.9 0.2 C4.113 6.9 3.8 6.3 3.8 5.613c0-0.361 0.097-0.699 0.266-0.99c0.971 1.2 2.4 2 4.1 2.1 C8.057 6.5 8 6.4 8 6.232c0-1.087 0.882-1.969 1.97-1.969c0.566 0 1.1 0.2 1.4 0.6 c0.448-0.089 0.87-0.253 1.251-0.478c-0.147 0.46-0.459 0.846-0.866 1.09c0.397-0.047 0.778-0.154 1.131-0.31 C12.7 5.6 12.4 5.9 12 6.204z"/></svg>
+							Twitter</p></a>
+						</li>
+						<li><a href="#nogo"><p>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" class="socialb" id="em"><g><g><g><path d="M33.475 36.652c-0.781 0.781-2.047 0.781-2.828 0l-1.58-1.58L22.985 41h18.102l-6.08-5.879L33.475 36.652z M44.206 23 H19.891L32 35L44.206 23z M18 24.006V41h2.061l7.528-7.405L18 24.006z M44.061 41H46V24.128l-9.468 9.467L44.061 41z M32 0 C14.327 0 0 14.3 0 32s14.327 32 32 32s32-14.327 32-32S49.673 0 32 0z M48 41c0 1.104-0.896 2-2 2H18c-1.104 0-2-0.896-2-2V23 c0-1.104 0.896-2 2-2h28c1.104 0 2 0.9 2 2V41z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+							stores@skule.ca</p></a>
+						</li>
+						<li><a href="#nogo"><p>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" class="socialb" id="ph"><path d="M256 0C114.625 0 0 114.6 0 256s114.625 256 256 256s256-114.625 256-256S397.375 0 256 0z M391.188 373.531l-20.5 20.5 c-3.656 3.656-14.375 5.938-14.719 5.938c-64.844 0.563-127.281-24.906-173.156-70.781c-46-46.031-71.5-108.688-70.813-173.75 c0-0.031 2.344-10.438 6-14.063l20.5-20.5c7.5-7.531 21.906-10.938 32-7.563l4.313 1.438c10.063 3.4 20.6 14.5 23.4 24.8 l10.313 37.844c2.781 10.281-0.969 24.906-8.469 32.406l-13.688 13.688c13.438 49.8 52.5 88.8 102.2 102.25L302.281 312 c7.531-7.531 22.156-11.281 32.406-8.5l37.844 10.344c10.25 2.8 21.4 13.3 24.8 23.375l1.438 4.4 C402.063 351.7 398.7 366.1 391.2 373.531z"/></svg>
+							7864564478</p></a>
+						</li>
+					</ul>
+				</div>
+				<div class="bar"></div>
+			</div>
+			</div>
+			</div>
+
+			<div id="footerbar"><p>Engineering Stores</p></div>
+		</footer>
+	</div>
+
+	<script src="fancybox2/source/jquery.fancybox.pack.js"></script> 
+
+	<script src="js/global.js"></script>
+</body>
+</html>
