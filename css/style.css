@@ -255,8 +255,8 @@ background: -webkit-linear-gradient(#dbdbdb, #808080);
 .sticker p{text-align:center;vertical-align:middle;margin:0px 7px 0px 7px;}
 .price{background:#4CBB17;min-width:50px;height:50px;margin:10px;position:absolute;bottom:0;right:0;}
 .price p{line-height:50px;font-size:23px;}
-.quantity{background:#be0000;width:40px;height:40px;margin-top:-10px;margin-right:-10px;position:absolute;right:0;top:0;z-index:9;overflow:hidden;}
-.quantity p{line-height:40px;font-size:22px;}
+.quantity{background:#be0000;width:40px;height:40px;margin-top:-10px;margin-right:-10px;position:absolute;right:0;top:0;z-index:9;overflow:hidden;-webkit-animation: zoomIn 0.4s;animation: zoomIn 0.4s;}
+.quantity p{line-height:40px;font-size:22px;-webkit-animation: bounceInRight 0.8s;animation: bounceInRight 0.8s;}
 .cost{display:inline-block;background:#4CBB17;height:44px;min-width:100px;margin:5px 0px 5px 0px;}
 .cost p{line-height:44px;font-size:32px;}
 

@@ -15,7 +15,6 @@
 		<div class="checkouttotals">
 			
 		</div>
-		
 		<div class="captcha">
 			<h3>Prove You are an Engineer (or just Human)</h3>
 			<p>Provide the correct answer to this captcha to proceed. This lets us know you aren't a bot.</p>
@@ -46,7 +45,7 @@
 			$(".overlay").fadeToggle("fast");
 		});
 		for (i = 1; i <= cartnum; i++){ <!-- src='/images/" + itemimagefile + "' where the string itemimagefile=='item8.png' -->
-			$(".checkoutbox").append("<div class='displaycard animated fadeIn'><div class='sticker quantity animated stay'><p class='animated bounceInRight'>" + cartnum + "</p></div><h3>Paper</h3><img src='/images/item8.png' width='200' height='200'/><p>best paper you will ever see, bruv.</p><div class='overlay'><a href='javascript:void(0)' onclick=''><div class='edit' id='top'></div></a><a href='javascript:void(0)' onclick=''><div class='edit' id ='middle'></div></a><a href='javascript:void(0)' onclick=''><div class='edit' id='bottom'></div></a></div></div>");
+			$(".checkoutbox").append("<div class='displaycard' style='-webkit-animation: fadeInUp 0s;animation: fadeInUp 0s;'><div class='sticker quantity'><p>" + cartnum + "</p></div><h3>Paper</h3><img src='/images/item8.png' width='200' height='200'/><p>best paper you will ever see, bruv.</p><div class='overlay'><a href='javascript:void(0)' onclick=''><div class='edit' id='top'></div></a><a href='javascript:void(0)' onclick=''><div class='edit' id ='middle'></div></a><a href='javascript:void(0)' onclick=''><div class='edit' id='bottom'></div></a></div></div>");
 		}
 		$(".checkouttotals").append("<h5>Your total cost is <div class='sticker cost'><p>$" + cartprice + "</p></div></h5>");
 		
